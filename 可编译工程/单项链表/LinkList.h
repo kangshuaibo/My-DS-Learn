@@ -25,8 +25,9 @@ typedef struct LINKLIST{
     LinkNode* head;
     int size;
 }LinkList;
+
 //打印
-typedef void(*PRINTLINKNODE)(void*);
+typedef void (*PRINTLINKNODE)(void*);//指向函数的指针类型 c参数为空
     
 
 
@@ -52,7 +53,7 @@ void* Front_LinkList(LinkList *list);
 void FreeSpace_LinkList(LinkList* list);
 
 //打印链表节点
-void print_LinkList(LinkList* list,PRINTLINKNODE print);
+void print_LinkList(LinkList* list,PRINTLINKNODE print);//定义一个指向函数的指针变量 print
 
 
 

@@ -140,7 +140,7 @@ void print_LinkList(LinkList* list,PRINTLINKNODE print)
     //辅助指针变量
     LinkNode* pCurrent = list->head->next;
     while(pCurrent!=NULL){
-        print(pCurrent->data);
+        (*print)(pCurrent->data);//相当于 Myprint(pCurrent->data)
         pCurrent=pCurrent->next;
     }
     
