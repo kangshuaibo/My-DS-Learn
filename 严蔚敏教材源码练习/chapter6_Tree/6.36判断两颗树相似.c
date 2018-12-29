@@ -18,7 +18,7 @@ int similar(BiTree T1,BiTree T2)
 		return 0;
 	else{
 		leftS=similar(T1->lchild,T2->lchild);
-		rightS=similar(T2->rchild,T2->rchild);
+		rightS=similar(T1->rchild,T2->rchild);
 		return leftS&&rightS;
 	}
 }

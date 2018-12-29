@@ -1,4 +1,4 @@
-/*
+ /*
 先序遍历
 */
 void PreOrder(BiTree T)

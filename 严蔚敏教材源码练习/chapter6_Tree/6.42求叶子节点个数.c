@@ -8,6 +8,18 @@ int LeafCount_BiTree(Bitree T)
 		return LeafCount_BiTree(T->lchile)+LeafCount_BiTree(T->rchild)
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 用孩子兄弟链表结构 求树中叶子节点数
 */

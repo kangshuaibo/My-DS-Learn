@@ -1,10 +1,11 @@
 //采用层次遍历方法
-// 求出所有节点所在的层次，并将所有节点 和 对应的层次放在一个队列中
+// 求出 所有节点 ·所在的层次·，并将所有节点 和 对应的层次放在一个队列中
 //然后通过 扫描队列求出 各层的节点总数
 //最大的层节点总数 即为二叉树的宽度
 typedef struct 
-{BiTree data[Maxsize];
-	int level[Maxsize];
+{	
+	BiTree data[Maxsize];
+	int level[Maxsize]; //保存相同下标节点 所在层次
 	int front,rear;
 	
 }Qu;
@@ -23,7 +24,7 @@ int BTWidth(BiTree b)
 	{
 		Qu.front++;	//出队
 		p=Qu.data[Qu.front];//记录出队节点
-		k=Qu.level[Qu.front];//记录出队节点的层次
+		k=Qu.level[Qu.front];//记录出队节点的层次 关键
 
 		if(p->lchild!=NULL)
 		{
@@ -50,7 +51,8 @@ int BTWidth(BiTree b)
 			i++;
 		}
 		k=Qu.level[i];
-		if(n>max) max=n;
+		if(n>max) 
+			max=n;
 	}
 	return max；
 }

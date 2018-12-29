@@ -13,6 +13,9 @@ int Count(CSTree t)
 }
 
 
+
+
+
 //6.61③试编写算法,求一棵以 孩子-兄弟链表 表示的树的度
 int GetDegree_CSTree(CSTree T)//求孩子兄弟链表表示的树 T 的度 
 {
@@ -36,6 +39,9 @@ int GetDegree_CSTree(CSTree T)//求孩子兄弟链表表示的树 T 的度
 
 
 
+
+
+
 //◆6.62④对以 孩子兄弟链表 表示的树编写计算树的深度的算法--------------------------------
 int GetDepth_CSTree(CSTree T)
 {
@@ -51,11 +57,16 @@ int GetDepth_CSTree(CSTree T)
 }
 
 
+
+
+
+
 			//1800
 
 			//若树为空，高度为0；若第一子女为空，高度为1和兄弟子树高度的大者；
 			//否则高度为第一子女树高度加1和兄弟子树高度的大者
 			//非递归使用队列
+
 
 			//递归算法-----------
 			if(bt==NULL)
@@ -71,6 +82,8 @@ int GetDepth_CSTree(CSTree T)
 				else
 					return hs;
 			}
+
+
 
 			//非递归-------------
 			Q[rear]=t;			//Q以树中节点为元素的队列

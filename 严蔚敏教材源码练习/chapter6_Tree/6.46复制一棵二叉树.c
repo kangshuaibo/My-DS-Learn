@@ -14,6 +14,8 @@ BiTree Copy(BiTree t)
 	return bt;
 }
 
+
+
 //非递归算法
 QueueIn(Q,(t,bt));
 while(!QueueIsEmptu(Q))

@@ -10,14 +10,14 @@ ElemType PreNode(BiTree b,int k)
 	if(b==NULL)
 		return '#';
 
-	if(i=k)
+	if(i==k)
 		return b->data;
 
 	i++;		//下一个节点
 
 	ch=PreNode(b->lchild,k);  //左子树递归找
 	if(ch！="#")
-		return ch
+		return ch;
 	ch=PreNode(b->rchile,k);  //右子树递归找
 		return ch;
 }

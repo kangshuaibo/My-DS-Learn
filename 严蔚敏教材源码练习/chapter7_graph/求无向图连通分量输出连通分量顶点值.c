@@ -7,7 +7,7 @@ void dfs(int v)
 {
 	visited[v]=1;
 	 printf("%d",v );	//输出连通分量的顶点
-	 p=g[v].firstarc;
+	 p=G[v].firstarc;
 	 while(p!=NULL)
 	 {
 	 	if(!visited[p->adjvex])

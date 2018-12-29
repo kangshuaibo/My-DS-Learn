@@ -11,6 +11,7 @@ bool IsComplete(BiTree T)
 	InitQueue(Q);
 	if(!T)
 		return 1;	//空树为满二叉树
+	
 	Enqueue(Q,T);
 	while(!IsEmpty(Q))
 	{
